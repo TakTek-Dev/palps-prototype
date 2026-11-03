@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شبكة الصحافة الفلسطينية — نماذج الواجهة</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/brand/logo.webp">
+  <style>
+    :root { --ink: #111; --muted: #5b5b5b; --line: #e3e3e3; --red: #CE1126; --green: #007A3D; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f6f4; color: var(--ink); font-family: system-ui, "Segoe UI", Tahoma, sans-serif; line-height: 1.7; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 16px 64px; }
+    header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+    header img { height: 72px; width: auto; }
+    h1 { margin: 0; font-size: clamp(22px, 3vw, 30px); }
+    p.lead { margin: 4px 0 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .card { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--c); padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+    .card b { font-size: 13px; color: var(--c); }
+    .card h2 { margin: 0; font-size: 24px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; flex: 1; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+    .links a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 16px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 14px; }
+    .links a.main { background: var(--ink); color: #fff; }
+    .links a.alt { border: 1px solid var(--line); color: var(--ink); }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/img/brand/logo.webp" alt="شبكة الصحافة الفلسطينية">
+      <div>
+        <h1>ثلاث عينات للواجهة الجديدة</h1>
+        <p class="lead">كل عينة بنية صفحة مختلفة، ومبنية من هوية الشعار: الريشة، خريطة فلسطين بألوان العلم، والحبر. المحتوى حقيقي من الموقع.</p>
+      </div>
+    </header>
+    <div class="grid">
+      <article class="card" style="--c: var(--red)">
+        <b>العينة A</b>
+        <h2>«الريشة»</h2>
+        <p>غرفة أخبار حيّة بطابع داكن: ترويسة في الوسط، خبر رئيسي بعرض كامل مع خط زمني مباشر، وأقسام على شكل شرائط تمرير.</p>
+        <div class="links"><a class="main" href="a/home.html">الواجهة</a><a class="alt" href="a/index.html">دليل الهوية</a></div>
+      </article>
+      <article class="card" style="--c: var(--green)">
+        <b>العينة B</b>
+        <h2>«الخريطة»</h2>
+        <p>بوابة إخبارية فاتحة وكثيفة: فسيفساء للخبر الرئيسي، أعمدة للأقسام جنب بعض، ولكل قسم لون من ألوان العلم.</p>
+        <div class="links"><a class="main" href="b/home.html">الواجهة</a><a class="alt" href="b/index.html">دليل الهوية</a></div>
+      </article>
+      <article class="card" style="--c: var(--ink)">
+        <b>العينة C</b>
+        <h2>«الحبر»</h2>
+        <p>مجلة تحقيقات بالأخضر الداكن: خبر رئيسي بشاشة مقسومة وعنوان ضخم، ملفات مرقّمة، أرقام كبيرة، واقتباسات للتحليلات.</p>
+        <div class="links"><a class="main" href="c/home.html">الواجهة</a><a class="alt" href="c/index.html">دليل الهوية</a></div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
