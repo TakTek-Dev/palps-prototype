@@ -52,7 +52,7 @@
     <div class="wrap">
       <div class="chap__head">
         <span class="chap__num" aria-hidden="true">01</span>
-        <div><h2>الألوان: ثلاث لوحات</h2><p>لون العلامة مجموعة متغيرات واحدة في <code dir="ltr">style.css</code> (<code dir="ltr">--brand</code> والداكن والفاتح ولون النص عليه). تبديل اللوحة يغيّر الموقع كله. جرّبها من أداة المعاينة أسفل الصفحة، أو بإضافة <code dir="ltr">?c=charcoal</code> أو <code dir="ltr">?c=navy</code> إلى الرابط. كل النسب أدناه تتجاوز 4.5:1.</p></div>
+        <div><h2>الألوان: ثلاث لوحات</h2><p>لا لون واحد على كل الصفحة: الحبر والورق والكريمي يحملون الصفحة، ولون العلامة يظهر في أماكن محددة فقط (شريط الأقسام، الأزرار، الروابط، شريط «شبكة أفيخاي»)، وأحمر العلم للمسات الصغيرة. لون العلامة مجموعة متغيرات واحدة في <code dir="ltr">style.css</code> (<code dir="ltr">--brand</code> والداكن والفاتح ولون النص عليه). جرّب اللوحات من أداة المعاينة أسفل الصفحة، أو بإضافة <code dir="ltr">?c=charcoal</code> أو <code dir="ltr">?c=navy</code> إلى الرابط. كل النسب أدناه تتجاوز 4.5:1.</p></div>
       </div>
       <div class="grid-3">
         <div class="pal">
@@ -90,8 +90,8 @@
         </div>
       </div>
       <div class="grid-4" style="margin-top:28px">
-        <div class="spec"><h3><i class="sw" style="background:#FFFDF8"></i>الورق <span class="hex">#FFFDF8</span></h3><p>خلفية الصفحة في كل اللوحات. الحبر عليه 18.39:1، والرمادي <span class="hex">#5C564C</span> للتواريخ 7.15:1.</p></div>
-        <div class="spec"><h3><i class="sw" style="background:#14120F"></i>الحبر <span class="hex">#14120F</span></h3><p>الحروف، وخلفية شريط «متداول». الحجري <span class="hex">#C9C2B4</span> عليه 10.56:1.</p></div>
+        <div class="spec"><h3><i class="sw" style="background:#FFFDF8"></i>الورق <span class="hex">#FFFDF8</span></h3><p>خلفية الصفحة والترويسة في كل اللوحات. الحبر عليه 18.39:1، والرمادي <span class="hex">#5C564C</span> للتواريخ 7.15:1. والكريمي <span class="hex">#F4EEE0</span> لشريطي «ملفات» و«أقلام مأجورة».</p></div>
+        <div class="spec"><h3><i class="sw" style="background:#14120F"></i>الحبر <span class="hex">#14120F</span></h3><p>الحروف وعناوين الأقسام، والشريط العلوي، وشريط «متداول»، وبطاقة الرقم، والتذييل. الحجري <span class="hex">#C9C2B4</span> عليه 10.56:1.</p></div>
         <div class="spec"><h3><i class="sw" style="background:#CE1126"></i>أحمر العلم <span class="hex">#CE1126</span></h3><p>يبقى أحمر في اللوحات الثلاث: السنّ، نقطة الحبر، زاوية الصورة. على الورق 5.53:1، وعلى الفاتح 4.86–4.97:1.</p></div>
         <div class="spec"><h3>على اللون</h3><p>الأحمر الأصلي لا يُقرأ فوق العنابي (1.95:1)، لذلك يُرفع إلى درجة أفتح في كل لوحة <span class="hex">--accent-on-brand</span>.</p></div>
       </div>
@@ -103,24 +103,24 @@
     <div class="wrap">
       <div class="chap__head">
         <span class="chap__num" aria-hidden="true">02</span>
-        <div><h2>الشعار: مفرّغ، بلا مربع</h2><p>على طلب العميل: الشعار الأبيض المفرّغ (ريشة واسم بالأبيض على خلفية شفافة) يجلس مباشرة داخل شريط التنقل الملوّن، وفي التذييل والقائمة. لا لوح ولا مربع أبيض ولا لسان متدلٍّ.</p></div>
+        <div><h2>الشعار: بألوانه، بلا مربع</h2><p>على طلب العميل: الشعار الملوّن الأصلي المفرّغ (بلا خلفية) يجلس مباشرة في الترويسة الفاتحة فوق شريط الأقسام، وفي القائمة على الجوال. النسخة البيضاء للتذييل الداكن فقط. لا لوح ولا مربع أبيض.</p></div>
       </div>
       <div class="grid-4">
         <div>
-          <div class="stage" style="background:#7A0F1E"><span class="stage__name" style="color:#F2C4C9">عنابي</span><img src="../assets/img/brand/logo-white.webp" width="120" height="160" alt="الشعار الأبيض على العنابي"></div>
-          <div class="spec"><h3>على العنابي</h3><p>الاستعمال الأساسي: الترويسة والتذييل وشريط «شبكة أفيخاي».</p></div>
+          <div class="stage stage--paper"><span class="stage__name" style="color:#5C564C">الترويسة</span><img src="../assets/img/brand/logo.webp" width="120" height="160" alt="الشعار الملوّن على الورق"></div>
+          <div class="spec"><h3>على الورق</h3><p>الاستعمال الأساسي: الترويسة والقائمة على الجوال، بألوان العلم كما هي.</p></div>
         </div>
         <div>
-          <div class="stage" style="background:#1A1A1A"><span class="stage__name" style="color:#CFC9BE">فحمي</span><img src="../assets/img/brand/logo-white.webp" width="120" height="160" alt="الشعار الأبيض على الفحمي"></div>
-          <div class="spec"><h3>على الفحمي والكحلي</h3><p>نفس الملف في كل لوحة، لا نسخة لكل لون.</p></div>
+          <div class="stage" style="background:#F4EEE0"><span class="stage__name" style="color:#5C564C">الكريمي</span><img src="../assets/img/brand/logo.webp" width="120" height="160" alt="الشعار الملوّن على الكريمي"></div>
+          <div class="spec"><h3>على الكريمي</h3><p>نفس الملف الملوّن، في كل اللوحات الثلاث.</p></div>
         </div>
         <div>
-          <div class="stage stage--paper"><span class="stage__name" style="color:#5C564C">على الفاتح</span><img src="../assets/img/brand/logo.webp" width="120" height="160" alt="الشعار الملوّن على الورق"></div>
-          <div class="spec"><h3>على الخلفيات الفاتحة</h3><p>الشعار الملوّن الأصلي (اسم أسود) للطباعة والخلفيات الفاتحة فقط. الأبيض لا يوضع على الورق.</p></div>
+          <div class="stage" style="background:#14120F"><span class="stage__name" style="color:#C9C2B4">التذييل</span><img src="../assets/img/brand/logo-white.webp" width="120" height="160" alt="الشعار الأبيض على الحبر"></div>
+          <div class="spec"><h3>على الداكن</h3><p>النسخة البيضاء للتذييل والخلفيات الداكنة فقط.</p></div>
         </div>
         <div>
           <div class="stage stage--dont" style="background:#7A0F1E"><span class="plate-demo"><img src="../assets/img/brand/logo.webp" width="84" height="112" alt="استعمال خاطئ: الشعار داخل مربع أبيض"></span></div>
-          <div class="spec"><h3>لا</h3><ul><li>لا مربع أبيض ولا لوح خلف الشعار.</li><li>لا تمديد ولا تلوين ولا ظلال.</li><li>أصغر ارتفاع 52px كي يبقى الاسم مقروءًا.</li></ul></div>
+          <div class="spec"><h3>لا</h3><ul><li>لا مربع أبيض ولا لوح خلف الشعار.</li><li>لا شعار أبيض في الترويسة.</li><li>لا تمديد ولا تلوين ولا ظلال.</li><li>أصغر ارتفاع 52px كي يبقى الاسم مقروءًا.</li></ul></div>
         </div>
       </div>
     </div>
