@@ -1,48 +1,26 @@
-// «الحبر»: palette preview (prototype only), search bar, phone drawer, video scroller arrows. Vanilla.
+// «الحبر»: today's date, search bar, phone drawer, video scroller arrows, figure-of-the-day switcher. Vanilla.
 (function () {
-  var PALS = ['burgundy', 'charcoal', 'navy'];
-  var root = document.documentElement;
-
-  function readPal() {
-    var m = /[?&]c=([a-z]+)/.exec(location.search);
-    return m && PALS.indexOf(m[1]) > -1 ? m[1] : 'burgundy';
-  }
-  function applyPal(p) {
-    PALS.forEach(function (x) { root.classList.remove('pal-' + x); });
-    root.classList.add('pal-' + p);
-  }
-  // runs in <head>, before first paint, so there is no flash of the wrong colour
-  applyPal(readPal());
-
   document.addEventListener('DOMContentLoaded', function () {
-    var pal = readPal();
-    var theme = document.querySelector('meta[name=theme-color]');
-    var brandHex = { burgundy: '#7A0F1E', charcoal: '#1A1A1A', navy: '#0F2A47' };
-
-    function setPal(p, push) {
-      pal = p;
-      applyPal(p);
-      if (theme) theme.setAttribute('content', brandHex[p]);
-      document.querySelectorAll('[data-pal]').forEach(function (b) {
-        b.setAttribute('aria-pressed', b.getAttribute('data-pal') === p ? 'true' : 'false');
-      });
-      // keep the choice on links between the homepage and the identity book
-      document.querySelectorAll('a[href^="home.html"], a[href^="index.html"]').forEach(function (a) {
-        var base = a.getAttribute('href').replace(/\?c=[a-z]+/, '');
-        var hash = '';
-        var i = base.indexOf('#');
-        if (i > -1) { hash = base.slice(i); base = base.slice(0, i); }
-        a.setAttribute('href', base + (p === 'burgundy' ? '' : '?c=' + p) + hash);
-      });
-      if (push) {
-        var url = new URL(location.href);
-        if (p === 'burgundy') url.searchParams.delete('c'); else url.searchParams.set('c', p);
-        history.replaceState(null, '', url);
-      }
+    // today's date in the top bar (Gregorian, Latin digits, like the site's own dates)
+    var today = document.querySelector('[data-today]');
+    if (today && window.Intl) {
+      var now = new Date();
+      try {
+        today.textContent = new Intl.DateTimeFormat('ar-u-ca-gregory-nu-latn', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(now);
+        today.setAttribute('datetime', now.toISOString().slice(0, 10));
+      } catch (e) { /* keep the static date */ }
     }
-    setPal(pal, false);
-    document.querySelectorAll('[data-pal]').forEach(function (b) {
-      b.addEventListener('click', function () { setPal(b.getAttribute('data-pal'), true); });
+
+    // أرقام من التغطية: one figure a day; the buttons show today's and the days before
+    document.querySelectorAll('.figcard').forEach(function (card) {
+      var btns = card.querySelectorAll('[data-fig]');
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var k = b.getAttribute('data-fig');
+          btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          card.querySelectorAll('[data-fig-item]').forEach(function (it) { it.hidden = it.getAttribute('data-fig-item') !== k; });
+        });
+      });
     });
 
     // search bar under the nav bar

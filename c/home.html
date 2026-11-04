@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>شبكة الصحافة الفلسطينية — الحبر</title>
-<meta name="description" content="شبكة الصحافة الفلسطينية: معالجات اخبارية، تحليلات واراء، أقلام مأجورة، ذباب فتح، شبكة أفيخاي ومتداول. مهنية. مستقلّة. موثوقة.">
+<meta name="description" content="شبكة الصحافة الفلسطينية: معالجات اخبارية، تحليلات واراء، أقلام مأجورة، ذباب فتح، شبكة أفيخاي ومتداول. الحقيقة بلا حواجز.">
 <meta name="theme-color" content="#7A0F1E">
 <link rel="preload" href="../assets/fonts/lalezar/lalezar-arabic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/zain/zain-400-arabic.woff2" as="font" type="font/woff2" crossorigin>
@@ -31,10 +31,10 @@
 
 <a class="skip" href="#main">تخطَّ إلى المحتوى</a>
 
-<!-- top bar: tagline + the network's platforms -->
+<!-- top bar: today's date + the network's platforms -->
 <div class="topbar">
   <div class="wrap topbar__in">
-    <span class="topbar__tag">مهنية. مستقلّة. موثوقة.</span>
+    <time class="topbar__date" data-today datetime="2026-11-04">الأربعاء 4 نوفمبر 2026</time>
     <nav class="platforms" aria-label="منصات الشبكة">
       <a href="#" aria-label="فيسبوك"><svg class="ico ico--fill"><use href="#i-facebook"/></svg></a>
       <a href="#" aria-label="إكس"><svg class="ico ico--fill"><use href="#i-x"/></svg></a>
@@ -46,12 +46,13 @@
   </div>
 </div>
 
-<!-- nav bar: the full-colour logo + search on paper, the sections row under the logo in the brand colour -->
+<!-- nav bar: the full-colour logo + slogan + search on paper, the sections row under the logo in the brand colour -->
 <header class="masthead">
   <div class="wrap masthead__row">
     <a class="logo" href="home.html" aria-label="شبكة الصحافة الفلسطينية — الرئيسية">
-      <img src="../assets/img/brand/logo.webp" width="78" height="104" alt="شبكة الصحافة الفلسطينية">
+      <img src="../assets/img/brand/logo.webp" width="96" height="128" alt="شبكة الصحافة الفلسطينية">
     </a>
+    <p class="slogan">الحقيقة بلا حواجز</p>
     <div class="masthead__tools">
       <button class="searchbtn" type="button" data-search-toggle aria-controls="searchbar" aria-expanded="false">
         <svg class="ico"><use href="#i-search"/></svg>بحث
@@ -64,12 +65,12 @@
   <nav class="sections" aria-label="أقسام الموقع">
     <ul class="wrap">
       <li><a href="home.html" aria-current="page">الرئيسية</a></li>
+      <li><a href="#trending">متداول</a></li>
       <li><a href="#news">معالجات اخبارية</a></li>
       <li><a href="#analysis">تحليلات واراء</a></li>
-      <li><a href="#paid">أقلام مأجورة</a></li>
-      <li><a href="#flies">ذباب فتح</a></li>
       <li><a href="#avichay">شبكة أفيخاي</a></li>
-      <li><a href="#trending">متداول</a></li>
+      <li><a href="#flies">ذباب فتح</a></li>
+      <li><a href="#paid">أقلام مأجورة</a></li>
       <li><a href="#">من نحن</a></li>
       <li><a href="#">تواصل معنا</a></li>
     </ul>
@@ -94,12 +95,12 @@
     <nav class="drawer__nav" aria-label="أقسام الموقع">
       <ul>
         <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="#trending">متداول</a></li>
         <li><a href="#news">معالجات اخبارية</a></li>
         <li><a href="#analysis">تحليلات واراء</a></li>
-        <li><a href="#paid">أقلام مأجورة</a></li>
-        <li><a href="#flies">ذباب فتح</a></li>
         <li><a href="#avichay">شبكة أفيخاي</a></li>
-        <li><a href="#trending">متداول</a></li>
+        <li><a href="#flies">ذباب فتح</a></li>
+        <li><a href="#paid">أقلام مأجورة</a></li>
         <li><a href="#">من نحن</a></li>
         <li><a href="#">تواصل معنا</a></li>
       </ul>
@@ -117,7 +118,7 @@
 
 <main id="main">
 
-  <!-- LEAD: split screen -->
+  <!-- LEAD: the main story with its photo; beside it متداول (videos) and أرقام من التغطية (one figure a day) -->
   <section class="lead" aria-label="القصة الرئيسية">
     <div class="wrap lead__grid">
       <article class="lead__story">
@@ -138,171 +139,123 @@
         <div class="lead__actions">
           <a class="btn" href="#">بقية التفاصيل <svg class="ico"><use href="#i-left"/></svg></a>
         </div>
-        <div class="lead__more">
-          <h2 class="mini-head">الأحدث</h2>
-          <ol class="lead__list">
-            <li><a href="#">
-              <img src="../assets/img/news/photo-2026-06-23-12-56-55.jpg" width="1024" height="1024" alt="">
-              <div><h3 class="t-sm">عبد العاطي ويوسف ياسر يشعلان الغضب في غزة.. ماذا وراء منشورات حراك 26 يونيو؟</h3><p class="meta"><time datetime="2026-06-23">23 يونيو 2026</time></p></div>
-            </a></li>
-            <li><a href="#">
-              <img src="../assets/img/news/images-1-3.jpeg" width="501" height="399" alt="">
-              <div><h3 class="t-sm">وقف مخصصات السلطة يحول أبطال السجون إلى مشردين في المنافي</h3><p class="meta"><time datetime="2026-06-23">23 يونيو 2026</time></p></div>
-            </a></li>
-            <li><a href="#">
-              <img src="../assets/img/news/gaza5-1760172550.webp" width="1620" height="1080" alt="">
-              <div><h3 class="t-sm">تحقيق تلفزيوني يوثق جرائم العصابات العميلة للاحتلال في غزة</h3><p class="meta"><time datetime="2026-06-23">23 يونيو 2026</time></p></div>
-            </a></li>
-          </ol>
-        </div>
+        <figure class="lead__photo">
+          <img src="../assets/img/news/file_6a6089cd81f1a.webp" width="1280" height="720" alt="طوابير سيارات في شارع مزدحم" loading="lazy">
+        </figure>
       </article>
-      <figure class="lead__photo">
-        <img src="../assets/img/news/file_6a6089cd81f1a.webp" width="1280" height="720" alt="طوابير سيارات في شارع مزدحم" fetchpriority="high">
-      </figure>
+
+      <div class="lead__side">
+        <section class="trend" id="trending" aria-labelledby="trend-h">
+          <div class="trend__head">
+            <h2 class="trend__title" id="trend-h"><svg class="nib"><use href="#nib"/></svg>متداول</h2>
+            <div class="scroller-nav" data-scroller-nav="trend-track">
+              <button type="button" data-dir="prev" aria-label="السابق"><svg class="ico"><use href="#i-right"/></svg></button>
+              <button type="button" data-dir="next" aria-label="التالي"><svg class="ico"><use href="#i-left"/></svg></button>
+            </div>
+          </div>
+          <p class="trend__note"><span class="live-dot" aria-hidden="true"></span>يتحدّث تلقائيًا من تيليجرام وفيسبوك</p>
+          <div class="scroller" id="trend-track" tabindex="0" aria-label="فيديوهات متداولة، مرّر أفقيًا">
+          <article class="vcard"><a href="https://t.me/Palps_net/12420" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12420.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:54</span></div>
+        <h3 class="t-sm">في الضفة.. لا صوت يعلو فوق صوت قمع السلطة الفلسطينية</h3>
+        <p class="meta"><time datetime="2026-11-04T07:28:10+00:00">4 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12418" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12418.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>1:35</span></div>
+        <h3 class="t-sm">في الضفة.. لا حياة آدمية في وجود السلطة الفلسطينية</h3>
+        <p class="meta"><time datetime="2026-11-03T18:16:59+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12415" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12415.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>2:30</span></div>
+        <h3 class="t-sm">لماذا لا تستطيع "إسرائيل" التخلص من السلطة الفلسطينية؟</h3>
+        <p class="meta"><time datetime="2026-11-03T15:36:04+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12413" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12413.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>1:43</span></div>
+        <h3 class="t-sm">اللي حط ال100 شيكل مش شايفك ولا وضعك أو أحوالك فارقة معاه</h3>
+        <p class="meta"><time datetime="2026-11-03T14:46:50+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12411" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12411.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:17</span></div>
+        <h3 class="t-sm">يحدث في بيت لحم.. فلتان أمني على أشده</h3>
+        <p class="meta"><time datetime="2026-11-03T13:33:25+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12406" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12406.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>3:19</span></div>
+        <h3 class="t-sm">جرة الغاز بالضفة بـ100 شيقل.. نتاج تسحيج الشعب للسلطة الفلسطينية</h3>
+        <p class="meta"><time datetime="2026-11-03T08:54:32+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12405" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12405.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>2:51</span></div>
+        <h3 class="t-sm">ما لا تعرف عن خوازيق اتفاق أوسلو</h3>
+        <p class="meta"><time datetime="2026-11-03T07:59:03+00:00">3 نوفمبر 2026</time></p>
+      </a></article>
+          <article class="vcard"><a href="https://t.me/Palps_net/12401" target="_blank" rel="noopener">
+        <div class="vcard__media"><img src="../assets/img/trending/tg-12401.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:40</span></div>
+        <h3 class="t-sm">توصيف ناري لأجمل حلقات ما خفي أعظم</h3>
+        <p class="meta"><time datetime="2026-11-02T17:57:04+00:00">2 نوفمبر 2026</time></p>
+      </a></article>
+          </div>
+        </section>
+
+        <section class="figcard" aria-labelledby="fig-h">
+          <div class="figcard__top">
+            <h2 class="figcard__head" id="fig-h"><svg class="nib"><use href="#nib"/></svg>أرقام من التغطية</h2>
+            <div class="figcard__days" role="group" aria-label="رقم كل يوم">
+            <button type="button" data-fig="0" aria-pressed="true">اليوم</button>
+            <button type="button" data-fig="1" aria-pressed="false">أمس</button>
+            <button type="button" data-fig="2" aria-pressed="false">قبل يومين</button>
+            </div>
+          </div>
+          <div class="figcard__item" data-fig-item="0">
+            <p class="figcard__value">100</p>
+            <div><p class="figcard__unit">ألف شيقل</p><p class="figcard__caption"><a href="#">معدل سرقة يونس أبو معيلق يوميًا</a></p></div>
+          </div>
+          <div class="figcard__item" data-fig-item="1" hidden>
+            <p class="figcard__value">10</p>
+            <div><p class="figcard__unit">آلاف دولار</p><p class="figcard__caption"><a href="#">ما يطلبه حمزة المصري للسكوت</a></p></div>
+          </div>
+          <div class="figcard__item" data-fig-item="2" hidden>
+            <p class="figcard__value">10</p>
+            <div><p class="figcard__unit">أيام</p><p class="figcard__caption"><a href="#">على سجن علي شريم</a></p></div>
+          </div>
+        </section>
+      </div>
     </div>
   </section>
 
-  <!-- ملفات: image-led cards -->
-  <section class="files" aria-labelledby="files-h">
+  <!-- معالجات اخبارية: three image-led cards (was «ملفات», which the site does not have) -->
+  <section class="files" id="news" aria-labelledby="news-h">
     <div class="wrap">
       <div class="shead">
-        <h2 class="shead__title" id="files-h"><svg class="nib"><use href="#nib"/></svg>ملفات</h2>
-        <a class="shead__more" href="#">كل الملفات <svg class="ico"><use href="#i-left"/></svg></a>
+        <h2 class="shead__title" id="news-h"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</h2>
+        <a class="shead__more" href="#">كل المعالجات <svg class="ico"><use href="#i-left"/></svg></a>
         <hr class="ink-rule">
       </div>
       <div class="files__grid">
         <article class="file">
           <a class="file__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/file_6a4cdf8c4c0d2.webp" width="788" height="364" alt="" loading="lazy" style="object-position: 100% 50%"></a>
-          <span class="kicker kicker--sm"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</span>
           <h3><a href="#">بعد شهر من مقتله.. هآرتس تكشف كيف قُتل الجاسوس عبد العزيز الدهيني داخل غزة</a></h3>
           <p>كشفت صحيفة هآرتس العبرية، نقلًا عن تحقيق للجيش الإسرائيلي، أن الجاسوس عبد العزيز الدهيني، شقيق مسؤول المليشيات المتعاونة..</p>
-          <div class="file__foot"><span class="meta"><time datetime="2026-07-07">7 يوليو 2026</time></span><a class="file__go" href="#">تابع الملف <svg class="ico"><use href="#i-left"/></svg></a></div>
+          <div class="file__foot"><span class="meta"><time datetime="2026-07-07">7 يوليو 2026</time></span><a class="file__go" href="#">بقية التفاصيل <svg class="ico"><use href="#i-left"/></svg></a></div>
         </article>
         <article class="file">
           <a class="file__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/file_6a4cde5111304.webp" width="863" height="486" alt="" loading="lazy"></a>
-          <span class="kicker kicker--sm"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</span>
           <h3><a href="#">تصريح مجتزأ يشعل حملة ضد مصطفى البرغوثي.. كيف بدأت الأزمة؟</a></h3>
           <p>توالت بيانات ومواقف فلسطينية رافضة للحملة الإعلامية التي استهدفت الأمين العام لـالمبادرة الوطنية الفلسطينية مصطفى البرغوثي..</p>
-          <div class="file__foot"><span class="meta"><time datetime="2026-07-07">7 يوليو 2026</time></span><a class="file__go" href="#">تابع الملف <svg class="ico"><use href="#i-left"/></svg></a></div>
+          <div class="file__foot"><span class="meta"><time datetime="2026-07-07">7 يوليو 2026</time></span><a class="file__go" href="#">بقية التفاصيل <svg class="ico"><use href="#i-left"/></svg></a></div>
         </article>
         <article class="file">
           <a class="file__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/file_6a4b86072c654.webp" width="830" height="506" alt="" loading="lazy"></a>
-          <span class="kicker kicker--sm"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</span>
           <h3><a href="#">إشادة واسعة بخطوة تسليم إدارة غزة.. ودعوات للوسطاء لتنفيذ التزاماتهم</a></h3>
           <p>أعلن مدير عام المكتب الإعلامي الحكومي إسماعيل الثوابتة أنه "في خطوة تعكس المسؤولية الوطنية، واستكمالًا لإجراءات نقل إدارة الحكم في قطاع غزة،..</p>
-          <div class="file__foot"><span class="meta"><time datetime="2026-07-06">6 يوليو 2026</time></span><a class="file__go" href="#">تابع الملف <svg class="ico"><use href="#i-left"/></svg></a></div>
+          <div class="file__foot"><span class="meta"><time datetime="2026-07-06">6 يوليو 2026</time></span><a class="file__go" href="#">بقية التفاصيل <svg class="ico"><use href="#i-left"/></svg></a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- معالجات اخبارية (two stories) + أرقام من التغطية (one figure) -->
-  <section class="block" id="news" aria-labelledby="news-h">
-    <div class="wrap newsrow">
-      <div>
-        <div class="shead">
-          <h2 class="shead__title" id="news-h"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</h2>
-          <a class="shead__more" href="#">كل المعالجات <svg class="ico"><use href="#i-left"/></svg></a>
-          <hr class="ink-rule">
-        </div>
-        <div class="news2">
-          <article class="ncard">
-            <a href="#">
-              <img src="../assets/img/news/file_6a4b663a37267.webp" width="572" height="349" alt="" loading="lazy">
-              <span class="kicker"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</span>
-              <h3>بعد ضغوط سفير السلطة.. دولة خليجية تُبعد ناشطين فلسطينيين</h3>
-            </a>
-            <p>أفادت مصادر فلسطينية مطلعة بأن السلطة الفلسطينية تحركت لدى إحدى الدول الخليجية لاتخاذ إجراءات بحق ناشطين فلسطينيين يقيمان فيه..</p>
-            <p class="meta"><time datetime="2026-07-06">6 يوليو 2026</time></p>
-          </article>
-          <article class="ncard">
-            <a href="#">
-              <img src="../assets/img/news/file_6a4ce80e772cf.webp" width="515" height="388" alt="" loading="lazy">
-              <span class="kicker"><svg class="nib"><use href="#nib"/></svg>معالجات اخبارية</span>
-              <h3>السلطة توقف قنصلها في دبي 15 يومًا على ذمة التحقيق بشبهات فساد</h3>
-            </a>
-            <p>تتواصل التحقيقات مع قنصل السلطة في دبي، الذي أشير إلى اسمه بالأحرف الأولى (م.أ)، بعد أن قررت النيابة العامة الفلسطينية توقيفه لمدة 15 يومًا..</p>
-            <p class="meta"><time datetime="2026-07-07">7 يوليو 2026</time></p>
-          </article>
-        </div>
-      </div>
-
-      <aside class="newsrow__fig" aria-labelledby="fig-h">
-        <div class="shead">
-          <h2 class="shead__title" id="fig-h"><svg class="nib"><use href="#nib"/></svg>أرقام من التغطية</h2>
-          <hr class="ink-rule">
-        </div>
-        <article class="figcard">
-          <p class="figcard__label"><svg class="nib"><use href="#nib"/></svg>قضية تهريب</p>
-          <p class="figcard__value">200</p>
-          <p class="figcard__unit">مليون شيقل</p>
-          <hr class="ink-rule ink-rule--light">
-          <h3 class="t-sm"><a href="#">قضية تهريب بـ200 مليون شيقل تجر اسم حسين الشيخ إلى الواجهة</a></h3>
-          <p class="figcard__desc">كشفت القناة 15 العبرية تفاصيل لائحة اتهام تتعلق بشبكة واسعة لتهريب البضائع إلى قطاع غزة خلال الحرب، تضم فلسطينيين ومصريين..</p>
-          <p class="meta">معالجات اخبارية · <time datetime="2026-07-06">6 يوليو 2026</time></p>
-        </article>
-      </aside>
-    </div>
-  </section>
-
-  <!-- متداول: videos pulled from the network's platforms -->
-  <section class="trend" id="trending" aria-labelledby="trend-h">
-    <div class="wrap">
-      <div class="shead">
-        <h2 class="shead__title" id="trend-h"><svg class="nib"><use href="#nib"/></svg>متداول</h2>
-        <div class="scroller-nav" data-scroller-nav="trend-track">
-          <button type="button" data-dir="prev" aria-label="السابق"><svg class="ico"><use href="#i-right"/></svg></button>
-          <button type="button" data-dir="next" aria-label="التالي"><svg class="ico"><use href="#i-left"/></svg></button>
-        </div>
-        <hr class="ink-rule">
-      </div>
-      <p class="trend__note"><span class="live-dot" aria-hidden="true"></span>يتحدّث هذا الشريط تلقائيًا من منصات الشبكة على تيليجرام وفيسبوك.</p>
-    </div>
-    <div class="scroller" id="trend-track" tabindex="0" aria-label="فيديوهات متداولة، مرّر أفقيًا">
-      <article class="vcard"><a href="https://t.me/Palps_net/12420" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12420.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:54</span></div>
-        <h3 class="t-sm">في الضفة.. لا صوت يعلو فوق صوت قمع السلطة الفلسطينية</h3>
-        <p class="meta"><time datetime="2026-11-04T07:28:10+00:00">4 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12418" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12418.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>1:35</span></div>
-        <h3 class="t-sm">في الضفة.. لا حياة آدمية في وجود السلطة الفلسطينية</h3>
-        <p class="meta"><time datetime="2026-11-03T18:16:59+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12415" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12415.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>2:30</span></div>
-        <h3 class="t-sm">لماذا لا تستطيع "إسرائيل" التخلص من السلطة الفلسطينية؟</h3>
-        <p class="meta"><time datetime="2026-11-03T15:36:04+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12413" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12413.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>1:43</span></div>
-        <h3 class="t-sm">اللي حط ال100 شيكل مش شايفك ولا وضعك أو أحوالك فارقة معاه</h3>
-        <p class="meta"><time datetime="2026-11-03T14:46:50+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12411" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12411.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:17</span></div>
-        <h3 class="t-sm">يحدث في بيت لحم.. فلتان أمني على أشده</h3>
-        <p class="meta"><time datetime="2026-11-03T13:33:25+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12406" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12406.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>3:19</span></div>
-        <h3 class="t-sm">جرة الغاز بالضفة بـ100 شيقل.. نتاج تسحيج الشعب للسلطة الفلسطينية</h3>
-        <p class="meta"><time datetime="2026-11-03T08:54:32+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12405" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12405.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>2:51</span></div>
-        <h3 class="t-sm">ما لا تعرف عن خوازيق اتفاق أوسلو</h3>
-        <p class="meta"><time datetime="2026-11-03T07:59:03+00:00">3 نوفمبر 2026</time></p>
-      </a></article>
-      <article class="vcard"><a href="https://t.me/Palps_net/12401" target="_blank" rel="noopener">
-        <div class="vcard__media"><img src="../assets/img/trending/tg-12401.jpg" width="180" height="320" alt="" loading="lazy"><span class="vcard__src"><svg class="ico ico--fill"><use href="#i-telegram"/></svg>تيليجرام</span><span class="vcard__play" aria-hidden="true"><svg class="ico"><use href="#i-play"/></svg></span><span class="vcard__dur" dir="ltr"><span class="sr-only">المدة </span>0:40</span></div>
-        <h3 class="t-sm">توصيف ناري لأجمل حلقات ما خفي أعظم</h3>
-        <p class="meta"><time datetime="2026-11-02T17:57:04+00:00">2 نوفمبر 2026</time></p>
-      </a></article>
-    </div>
-  </section>
-
-  <!-- تحليلات واراء: pull quotes -->
+  <!-- تحليلات واراء: three items, photo top-left, title on the right -->
   <section class="block" id="analysis" aria-labelledby="analysis-h">
     <div class="wrap">
       <div class="shead">
@@ -312,40 +265,61 @@
       </div>
       <div class="quotes">
         <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">خطر الحراك التخريبي يتطابق مع ظاهرة ميليشيات الاحتلال في تهديد حاضر ومستقبل غزة</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/d6LRQ.jpg" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-24">24 يونيو 2026</time></p></div></div>
+          <div class="quote__body"><span class="quote__mark" aria-hidden="true">”</span><h3><a href="#">خطر الحراك التخريبي يتطابق مع ظاهرة ميليشيات الاحتلال في تهديد حاضر ومستقبل غزة</a></h3></div>
+          <a class="quote__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/d6LRQ.jpg" width="150" height="150" alt="" loading="lazy"></a>
         </article>
         <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">عصمت منصور ينصب نفسه ناطقا باسم الاحتلال بشأن مستقبل قطاع غزة</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/mGFzB.jpeg" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-24">24 يونيو 2026</time></p></div></div>
+          <div class="quote__body"><span class="quote__mark" aria-hidden="true">”</span><h3><a href="#">عصمت منصور ينصب نفسه ناطقا باسم الاحتلال بشأن مستقبل قطاع غزة</a></h3></div>
+          <a class="quote__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/mGFzB.jpeg" width="150" height="150" alt="" loading="lazy"></a>
         </article>
         <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">ما وراء تغييرات فتح؟.. اتهامات بالفساد وإقصاء قيادات وتثبيت نفوذ أسماء بارزة</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/thumbs-b-c-a0e7fa30afe671de3b70ba1ede15467f.jpg" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-23">23 يونيو 2026</time></p></div></div>
-        </article>
-        <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">إهمال السلطة الفلسطينية يهدد بانهيار المستشفيات في الضفة الغربية</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/mstshfyat.webp" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-23">23 يونيو 2026</time></p></div></div>
-        </article>
-        <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">السفير أشرف دبور يكشف تفاصيل قضية مالية مرتبطة بياسر عباس في لبنان</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/ashrf-dbor.png" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-20">20 يونيو 2026</time></p></div></div>
-        </article>
-        <article class="quote">
-          <span class="quote__mark" aria-hidden="true">”</span>
-          <blockquote><h3><a href="#">انقسامات فتح تهدد بتصعيد معركة خلافة عباس بعد مؤتمر الحركة الثامن</a></h3></blockquote>
-          <div class="quote__by"><img src="../assets/img/news/f0a24783-ba06-4435-8a45-0f16a4c4be91.jpg" width="52" height="52" alt="" loading="lazy"><div><span class="kicker">تحليلات واراء</span><p class="meta"><time datetime="2026-06-20">20 يونيو 2026</time></p></div></div>
+          <div class="quote__body"><span class="quote__mark" aria-hidden="true">”</span><h3><a href="#">ما وراء تغييرات فتح؟.. اتهامات بالفساد وإقصاء قيادات وتثبيت نفوذ أسماء بارزة</a></h3></div>
+          <a class="quote__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/thumbs-b-c-a0e7fa30afe671de3b70ba1ede15467f.jpg" width="150" height="150" alt="" loading="lazy"></a>
         </article>
       </div>
-      <div class="more-analysis">
-        <a href="#"><svg class="nib"><use href="#nib"/></svg>ارتباط وثيق بين العصابات العميلة في غزة ودعوات الحراك التخريبي</a>
-        <a href="#"><svg class="nib"><use href="#nib"/></svg>دعم إسرائيلي رسمي يعري حقيقة أهداف الحراك التخريبي في غزة</a>
+    </div>
+  </section>
+
+  <!-- شبكة أفيخاي: feature + strip, on navy -->
+  <section class="avichay on-brand" id="avichay" aria-labelledby="avichay-h">
+    <div class="wrap">
+      <div class="shead shead--light">
+        <h2 class="shead__title" id="avichay-h"><svg class="nib"><use href="#nib"/></svg>شبكة أفيخاي</h2>
+        <a class="shead__more" href="#">المزيد <svg class="ico"><use href="#i-left"/></svg></a>
+        <hr class="ink-rule ink-rule--light">
       </div>
+      <div class="avichay__grid">
+        <a class="avichay__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/photo-2026-01-10-11-14-53.jpg" width="1080" height="1080" alt="" loading="lazy"></a>
+        <div>
+          <span class="kicker avichay__kicker"><svg class="nib"><use href="#nib"/></svg>شبكة أفيخاي · صورتان</span>
+          <h3 class="avichay__title"><a href="#">علي شريم يكذب كما يتنفس.. عائلة الخور ستقاضيه</a></h3>
+          <p class="meta"><time datetime="2026-01-10">10 يناير 2026</time></p>
+          <a class="btn btn--light" href="#">بقية التفاصيل <svg class="ico"><use href="#i-left"/></svg></a>
+          <div class="strip">
+            <a href="#"><img src="../assets/img/news/photo-2026-01-09-21-10-45.jpg" width="112" height="112" alt="" loading="lazy"><div><h3 class="t-sm">الاعتراف بإقليم صوماليلاند.. خطوة تكشف مشروع إسرائيل الإقليمي الأكبر</h3><p class="meta"><time datetime="2026-01-09">9 يناير 2026</time></p></div></a>
+            <a href="#"><img src="../assets/img/news/photo-2026-01-09-21-08-15.jpg" width="112" height="112" alt="" loading="lazy"><div><h3 class="t-sm">شهد الشرفا.. بوق فتح الناعم لتشويه المقاومة وتبييض الاحتلال</h3><p class="meta"><time datetime="2026-01-09">9 يناير 2026</time></p></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ذباب فتح: compact ruled grid -->
+  <section class="block" id="flies" aria-labelledby="flies-h">
+    <div class="wrap">
+      <div class="shead">
+        <h2 class="shead__title" id="flies-h"><svg class="nib"><use href="#nib"/></svg>ذباب فتح</h2>
+        <a class="shead__more" href="#">المزيد <svg class="ico"><use href="#i-left"/></svg></a>
+        <hr class="ink-rule">
+      </div>
+      <ul class="flies">
+        <li><a href="#"><img src="../assets/img/news/7bd23523-0bad-426f-88e9-8ed230105d3c_16x9_1200x676.webp" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">خروقات الاحتلال الإسرائيلي لاتفاق وقف إطلاق النار في قطاع غزة لليوم 245</h3><p class="meta"><time datetime="2026-06-15">15 يونيو 2026</time></p></div></a></li>
+        <li><a href="#"><img src="../assets/img/news/f0a24783-ba06-4435-8a45-0f16a4c4be91.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">جدل داخل فتح بعد الانتخابات الداخلية.. تساؤلات حول تمثيل غزة في المجلس الثوري</h3><p class="meta"><time datetime="2026-05-18">18 مايو 2026</time></p></div></a></li>
+        <li><a href="#"><img src="../assets/img/news/alaml-scaled.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">عيد العمال في زمن الإبادة: غزة تغرق في البطالة والفقر</h3><p class="meta"><time datetime="2026-04-30">30 أبريل 2026</time></p></div></a></li>
+        <li><a href="#"><img src="../assets/img/news/ghzh-7.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">تدهور إنساني متصاعد في غزة.. أرقام صادمة لخروقات أبريل</h3><p class="meta"><time datetime="2026-04-30">30 أبريل 2026</time></p></div></a></li>
+        <li><a href="#"><img src="../assets/img/news/israel-money-1.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">رواتب البلديات والمجالس القروية في فلسطين.. كم يحصل الرؤساء والأعضاء؟</h3><p class="meta"><time datetime="2026-04-28">28 أبريل 2026</time></p></div></a></li>
+        <li><a href="#"><img src="../assets/img/news/wqf-itlaq-alnar.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">رصد كامل لخروقات الاحتلال لوقف إطلاق النار في غزة</h3><p class="meta"><time datetime="2026-04-14">14 أبريل 2026</time></p></div></a></li>
+      </ul>
     </div>
   </section>
 
@@ -354,7 +328,7 @@
     <div class="wrap">
       <div class="shead">
         <h2 class="shead__title" id="paid-h"><svg class="nib"><use href="#nib"/></svg>أقلام مأجورة</h2>
-        <a class="shead__more" href="#">كل الملفات <svg class="ico"><use href="#i-left"/></svg></a>
+        <a class="shead__more" href="#">المزيد <svg class="ico"><use href="#i-left"/></svg></a>
         <hr class="ink-rule">
       </div>
       <div class="posters">
@@ -377,49 +351,6 @@
     </div>
   </section>
 
-  <!-- ذباب فتح: compact ruled grid -->
-  <section class="block" id="flies" aria-labelledby="flies-h">
-    <div class="wrap">
-      <div class="shead">
-        <h2 class="shead__title" id="flies-h"><svg class="nib"><use href="#nib"/></svg>ذباب فتح</h2>
-        <a class="shead__more" href="#">كل الملفات <svg class="ico"><use href="#i-left"/></svg></a>
-        <hr class="ink-rule">
-      </div>
-      <ul class="flies">
-        <li><a href="#"><img src="../assets/img/news/7bd23523-0bad-426f-88e9-8ed230105d3c_16x9_1200x676.webp" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">خروقات الاحتلال الإسرائيلي لاتفاق وقف إطلاق النار في قطاع غزة لليوم 245</h3><p class="meta"><time datetime="2026-06-15">15 يونيو 2026</time></p></div></a></li>
-        <li><a href="#"><img src="../assets/img/news/f0a24783-ba06-4435-8a45-0f16a4c4be91.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">جدل داخل فتح بعد الانتخابات الداخلية.. تساؤلات حول تمثيل غزة في المجلس الثوري</h3><p class="meta"><time datetime="2026-05-18">18 مايو 2026</time></p></div></a></li>
-        <li><a href="#"><img src="../assets/img/news/alaml-scaled.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">عيد العمال في زمن الإبادة: غزة تغرق في البطالة والفقر</h3><p class="meta"><time datetime="2026-04-30">30 أبريل 2026</time></p></div></a></li>
-        <li><a href="#"><img src="../assets/img/news/ghzh-7.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">تدهور إنساني متصاعد في غزة.. أرقام صادمة لخروقات أبريل</h3><p class="meta"><time datetime="2026-04-30">30 أبريل 2026</time></p></div></a></li>
-        <li><a href="#"><img src="../assets/img/news/israel-money-1.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">رواتب البلديات والمجالس القروية في فلسطين.. كم يحصل الرؤساء والأعضاء؟</h3><p class="meta"><time datetime="2026-04-28">28 أبريل 2026</time></p></div></a></li>
-        <li><a href="#"><img src="../assets/img/news/wqf-itlaq-alnar.jpg" width="120" height="90" alt="" loading="lazy"><div><h3 class="t-sm">رصد كامل لخروقات الاحتلال لوقف إطلاق النار في غزة</h3><p class="meta"><time datetime="2026-04-14">14 أبريل 2026</time></p></div></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- شبكة أفيخاي: feature + strip -->
-  <section class="avichay on-brand" id="avichay" aria-labelledby="avichay-h">
-    <div class="wrap">
-      <div class="shead shead--light">
-        <h2 class="shead__title" id="avichay-h"><svg class="nib"><use href="#nib"/></svg>شبكة أفيخاي</h2>
-        <a class="shead__more" href="#">كل الملفات <svg class="ico"><use href="#i-left"/></svg></a>
-        <hr class="ink-rule ink-rule--light">
-      </div>
-      <div class="avichay__grid">
-        <a class="avichay__img" href="#" tabindex="-1" aria-hidden="true"><img src="../assets/img/news/photo-2026-01-10-11-14-53.jpg" width="1080" height="1080" alt="" loading="lazy"></a>
-        <div>
-          <span class="kicker avichay__kicker"><svg class="nib"><use href="#nib"/></svg>شبكة أفيخاي · صورتان</span>
-          <h3 class="avichay__title"><a href="#">علي شريم يكذب كما يتنفس.. عائلة الخور ستقاضيه</a></h3>
-          <p class="meta"><time datetime="2026-01-10">10 يناير 2026</time></p>
-          <a class="btn btn--light" href="#">افتح الملف <svg class="ico"><use href="#i-left"/></svg></a>
-          <div class="strip">
-            <a href="#"><img src="../assets/img/news/photo-2026-01-09-21-10-45.jpg" width="112" height="112" alt="" loading="lazy"><div><h3 class="t-sm">الاعتراف بإقليم صوماليلاند.. خطوة تكشف مشروع إسرائيل الإقليمي الأكبر</h3><p class="meta"><time datetime="2026-01-09">9 يناير 2026</time></p></div></a>
-            <a href="#"><img src="../assets/img/news/photo-2026-01-09-21-08-15.jpg" width="112" height="112" alt="" loading="lazy"><div><h3 class="t-sm">شهد الشرفا.. بوق فتح الناعم لتشويه المقاومة وتبييض الاحتلال</h3><p class="meta"><time datetime="2026-01-09">9 يناير 2026</time></p></div></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer class="foot">
@@ -428,7 +359,7 @@
       <img src="../assets/img/brand/logo-white.webp" width="48" height="64" alt="شبكة الصحافة الفلسطينية" loading="lazy">
       <div>
         <p class="foot__name">شبكة الصحافة الفلسطينية</p>
-        <p class="foot__tag">مهنية. مستقلّة. موثوقة.</p>
+        <p class="foot__tag">الحقيقة بلا حواجز</p>
       </div>
       <nav class="platforms" aria-label="منصات الشبكة">
         <a href="#" aria-label="فيسبوك"><svg class="ico ico--fill"><use href="#i-facebook"/></svg></a>
@@ -441,12 +372,12 @@
     </div>
     <nav class="foot__links" aria-label="أقسام الموقع">
       <a href="home.html">الرئيسية</a>
+      <a href="#trending">متداول</a>
       <a href="#news">معالجات اخبارية</a>
       <a href="#analysis">تحليلات واراء</a>
-      <a href="#paid">أقلام مأجورة</a>
-      <a href="#flies">ذباب فتح</a>
       <a href="#avichay">شبكة أفيخاي</a>
-      <a href="#trending">متداول</a>
+      <a href="#flies">ذباب فتح</a>
+      <a href="#paid">أقلام مأجورة</a>
       <a href="#">من نحن</a>
       <a href="#">تواصل معنا</a>
     </nav>
@@ -456,13 +387,5 @@
     </div>
   </div>
 </footer>
-
-<!-- prototype only: palette preview tool -->
-<div class="paltool" role="group" aria-label="أداة معاينة: لون الهوية">
-  <span class="paltool__label">معاينة اللون</span>
-  <button type="button" data-pal="burgundy" aria-pressed="true"><i style="background:#7A0F1E"></i>عنابي</button>
-  <button type="button" data-pal="charcoal" aria-pressed="false"><i style="background:#1A1A1A"></i>فحمي</button>
-  <button type="button" data-pal="navy" aria-pressed="false"><i style="background:#0F2A47"></i>كحلي</button>
-</div>
 </body>
 </html>
