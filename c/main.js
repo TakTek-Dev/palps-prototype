@@ -1,4 +1,4 @@
-// «الحبر»: today's date, search bar, phone drawer, video scroller arrows, figure-of-the-day switcher. Vanilla.
+// «الحبر»: today's date, search bar, phone drawer, video scroller arrows. Vanilla.
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
     // today's date in the top bar (Gregorian, Latin digits, like the site's own dates)
@@ -10,18 +10,6 @@
         today.setAttribute('datetime', now.toISOString().slice(0, 10));
       } catch (e) { /* keep the static date */ }
     }
-
-    // أرقام من التغطية: one figure a day; the buttons show today's and the days before
-    document.querySelectorAll('.figcard').forEach(function (card) {
-      var btns = card.querySelectorAll('[data-fig]');
-      btns.forEach(function (b) {
-        b.addEventListener('click', function () {
-          var k = b.getAttribute('data-fig');
-          btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-          card.querySelectorAll('[data-fig-item]').forEach(function (it) { it.hidden = it.getAttribute('data-fig-item') !== k; });
-        });
-      });
-    });
 
     // search bar under the nav bar
     var sbtn = document.querySelector('[data-search-toggle]');
