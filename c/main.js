@@ -1,5 +1,20 @@
-// «الحبر»: today's date, search bar, phone drawer, video scroller arrows. Vanilla.
+// «الحبر»: dark mode, today's date, search bar, phone drawer, video scroller arrows. Vanilla.
 (function () {
+  // dark mode: the reader's choice, else the system's. Runs in <head>, before first paint.
+  var KEY = 'palps-theme';
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) { /* storage blocked */ }
+  var dark = saved ? saved === 'dark' : !!(window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+  function setTheme(isDark) {
+    root.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (b) {
+      b.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      b.setAttribute('aria-label', isDark ? 'الوضع النهاري' : 'الوضع الليلي');
+    });
+  }
+  setTheme(dark);
+
   document.addEventListener('DOMContentLoaded', function () {
     // today's date in the top bar (Gregorian, Latin digits, like the site's own dates)
     var today = document.querySelector('[data-today]');
@@ -10,6 +25,15 @@
         today.setAttribute('datetime', now.toISOString().slice(0, 10));
       } catch (e) { /* keep the static date */ }
     }
+
+    setTheme(dark);
+    document.querySelectorAll('[data-theme-toggle]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        dark = root.getAttribute('data-theme') !== 'dark';
+        setTheme(dark);
+        try { localStorage.setItem(KEY, dark ? 'dark' : 'light'); } catch (e) { /* storage blocked */ }
+      });
+    });
 
     // search bar under the nav bar
     var sbtn = document.querySelector('[data-search-toggle]');

@@ -16,6 +16,8 @@
   <symbol id="nib" viewBox="0 0 16 20"><path fill="currentColor" d="M8 20 2.3 9.6C1.6 8.4 1.9 6.9 3 6L5 4.4V0h6v4.4L13 6c1.1.9 1.4 2.4.7 3.6Z"/><path d="M8 10.5V19" stroke="#FFFDF8" stroke-width="1.2"/><circle cx="8" cy="9.2" r="1.4" fill="#FFFDF8"/></symbol>
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
   <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M9 18h12"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
@@ -50,12 +52,16 @@
 <header class="masthead">
   <div class="wrap masthead__row">
     <a class="logo" href="home.html" aria-label="شبكة الصحافة الفلسطينية — الرئيسية">
-      <img src="../assets/img/brand/logo.webp" width="96" height="128" alt="شبكة الصحافة الفلسطينية">
+      <img class="logo__light" src="../assets/img/brand/logo.webp" width="96" height="128" alt="شبكة الصحافة الفلسطينية">
+      <img class="logo__dark" src="../assets/img/brand/logo-white.webp" width="96" height="128" alt="شبكة الصحافة الفلسطينية">
     </a>
     <p class="slogan">الحقيقة بلا حواجز</p>
     <div class="masthead__tools">
       <button class="searchbtn" type="button" data-search-toggle aria-controls="searchbar" aria-expanded="false">
         <svg class="ico"><use href="#i-search"/></svg>بحث
+      </button>
+      <button class="themebtn" type="button" data-theme-toggle aria-pressed="false" aria-label="الوضع الليلي">
+        <svg class="ico i-moon"><use href="#i-moon"/></svg><svg class="ico i-sun"><use href="#i-sun"/></svg>
       </button>
       <button class="menubtn" type="button" data-open-menu aria-controls="drawer" aria-expanded="false" aria-label="القائمة">
         <svg class="ico"><use href="#i-menu"/></svg>
@@ -89,7 +95,7 @@
   <button class="drawer__scrim" type="button" data-close-menu tabindex="-1" aria-label="إغلاق القائمة"></button>
   <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="القائمة">
     <div class="drawer__top">
-      <img src="../assets/img/brand/logo.webp" width="45" height="60" alt="شبكة الصحافة الفلسطينية">
+      <img class="logo__light" src="../assets/img/brand/logo.webp" width="45" height="60" alt="شبكة الصحافة الفلسطينية"><img class="logo__dark" src="../assets/img/brand/logo-white.webp" width="45" height="60" alt="">
       <button class="drawer__close" type="button" data-close-menu aria-label="إغلاق القائمة"><svg class="ico"><use href="#i-close"/></svg></button>
     </div>
     <nav class="drawer__nav" aria-label="أقسام الموقع">
